@@ -5,7 +5,7 @@ import {
   trainingLibrary,
   proVideoLibrary,
   analysisInsights,
-} from "./data.js";
+} from "../data/index.js";
 
 const storageKey = "racketlab-state-v1";
 
@@ -71,7 +71,27 @@ function init() {
   renderDashboard();
 }
 
-document.addEventListener("DOMContentLoaded", init);
+export function initRacketLab() {
+  const root = document.querySelector("[data-racketlab-root]");
+  if (!root) {
+    console.warn("RacketLab Root nicht gefunden – konnte nicht initialisieren.");
+    return;
+  }
+  if (root.dataset.initialized === "true") {
+    return;
+  }
+  root.dataset.initialized = "true";
+  init();
+}
+
+if (import.meta && import.meta.hot) {
+  import.meta.hot.dispose(() => {
+    const root = document.querySelector("[data-racketlab-root]");
+    if (root) {
+      delete root.dataset.initialized;
+    }
+  });
+}
 
 // Smooth scroll for hero button
 function setupSmoothScroll() {

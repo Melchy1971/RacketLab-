@@ -1,0 +1,10 @@
+{
+  "name": "RacketLab",
+  "description": "Loveable.dev Projekt mit interaktivem RacketLab Interface",
+  "framework": "react",
+  "entry": "src/main.jsx",
+  "ui": {
+    "type": "spa",
+    "theme": "racketlab"
+  }
+}

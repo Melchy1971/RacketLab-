@@ -1,0 +1,663 @@
+export const racketCombos = [
+  {
+    id: "allround-beginner-balanced",
+    name: "Allround Control+",
+    style: "allround",
+    level: "beginner",
+    budget: "under150",
+    carbon: false,
+    blade: {
+      name: "Stiga Allround Classic",
+      tempo: 78,
+      control: 88,
+      weight: 83,
+      price: 45,
+    },
+    rubbers: [
+      {
+        side: "VH",
+        name: "Butterfly Sriver FX",
+        tempo: 80,
+        spin: 82,
+        control: 86,
+        weight: 45,
+        price: 32,
+      },
+      {
+        side: "RH",
+        name: "Donic Vario",
+        tempo: 76,
+        spin: 78,
+        control: 84,
+        weight: 44,
+        price: 30,
+      },
+    ],
+    metrics: {
+      tempo: 78,
+      spin: 80,
+      control: 88,
+      balance: "Kontrolle",
+    },
+    totalPrice: 45 + 32 + 30,
+    description:
+      "Ideal für Allrounder*innen, die Wert auf Kontrolle legen und vielseitig spielen.",
+    reviews: [
+      {
+        user: "Sven",
+        quote:
+          "Perfekt für mein Vereins-Training – fühlt sich in jeder Situation sicher an.",
+        rating: 4.6,
+      },
+      {
+        user: "Melanie",
+        quote:
+          "Endlich kann ich Topspin und Block kontrolliert üben, ohne Angst vor Fehlern.",
+        rating: 4.8,
+      },
+    ],
+  },
+  {
+    id: "offensive-intermediate-carbon",
+    name: "Pro Spin Accelerator",
+    style: "offensive",
+    level: "intermediate",
+    budget: "150-250",
+    carbon: true,
+    blade: {
+      name: "Butterfly Viscaria (ALC)",
+      tempo: 94,
+      control: 78,
+      weight: 90,
+      price: 165,
+    },
+    rubbers: [
+      {
+        side: "VH",
+        name: "Xiom Omega VII Pro",
+        tempo: 95,
+        spin: 96,
+        control: 78,
+        weight: 47,
+        price: 55,
+      },
+      {
+        side: "RH",
+        name: "Tibhar Aurus Select",
+        tempo: 90,
+        spin: 92,
+        control: 80,
+        weight: 46,
+        price: 48,
+      },
+    ],
+    metrics: {
+      tempo: 94,
+      spin: 94,
+      control: 78,
+      balance: "Tempo/Spin",
+    },
+    totalPrice: 165 + 55 + 48,
+    description:
+      "Für offensive Vereinsspieler*innen, die mit hohem Tempo und viel Spin dominieren wollen.",
+    reviews: [
+      {
+        user: "Marco",
+        quote:
+          "Der Katapult ist brachial, trotzdem bleibt der Schläger erstaunlich kontrollierbar.",
+        rating: 4.7,
+      },
+      {
+        user: "Natalia",
+        quote:
+          "Ideal für tischnahes Power-Topspin-Spiel, Blocks gelingen dank Carbon stabil.",
+        rating: 4.5,
+      },
+    ],
+  },
+  {
+    id: "defensive-advanced",
+    name: "Defence Master 2.0",
+    style: "defensive",
+    level: "advanced",
+    budget: "150-250",
+    carbon: false,
+    blade: {
+      name: "Joola Chen Weixing",
+      tempo: 68,
+      control: 94,
+      weight: 86,
+      price: 95,
+    },
+    rubbers: [
+      {
+        side: "VH",
+        name: "Victas VS> 401",
+        tempo: 78,
+        spin: 92,
+        control: 88,
+        weight: 48,
+        price: 48,
+      },
+      {
+        side: "RH",
+        name: "Tibhar Grass D.Tecs (lang)",
+        tempo: 60,
+        spin: 50,
+        control: 90,
+        weight: 42,
+        price: 47,
+      },
+    ],
+    metrics: {
+      tempo: 70,
+      spin: 80,
+      control: 94,
+      balance: "Störspiel",
+    },
+    totalPrice: 95 + 48 + 47,
+    description:
+      "Für moderne Verteidiger*innen, die variable Schnittwechsel und sichere Blocks brauchen.",
+    reviews: [
+      {
+        user: "Lukas",
+        quote: "Perfekt für Abwehr auf Distanz und aggressive Noppenkonter.",
+        rating: 4.9,
+      },
+    ],
+  },
+  {
+    id: "allround-intermediate",
+    name: "Smart Flex Loop",
+    style: "allround",
+    level: "intermediate",
+    budget: "150-250",
+    carbon: false,
+    blade: {
+      name: "Nittaku Acoustic",
+      tempo: 86,
+      control: 84,
+      weight: 88,
+      price: 140,
+    },
+    rubbers: [
+      {
+        side: "VH",
+        name: "Donic Bluestorm Z2",
+        tempo: 92,
+        spin: 94,
+        control: 80,
+        weight: 46,
+        price: 52,
+      },
+      {
+        side: "RH",
+        name: "Nittaku Fastarc G-1",
+        tempo: 90,
+        spin: 92,
+        control: 82,
+        weight: 45,
+        price: 49,
+      },
+    ],
+    metrics: {
+      tempo: 89,
+      spin: 93,
+      control: 82,
+      balance: "Spinorientiert",
+    },
+    totalPrice: 140 + 52 + 49,
+    description:
+      "Ein dynamisches Setup für variables Topspinspiel mit hervorragender Ballrückmeldung.",
+    reviews: [
+      {
+        user: "Tom",
+        quote:
+          "Die Holzkontrolle ist Wahnsinn, kombiniert mit explosiven Belägen – top!",
+        rating: 4.8,
+      },
+    ],
+  },
+  {
+    id: "offensive-advanced-premium",
+    name: "Elite Carbon Force",
+    style: "offensive",
+    level: "advanced",
+    budget: "over250",
+    carbon: true,
+    blade: {
+      name: "Stiga Carbonado 145",
+      tempo: 97,
+      control: 80,
+      weight: 89,
+      price: 220,
+    },
+    rubbers: [
+      {
+        side: "VH",
+        name: "Butterfly Dignics 09C",
+        tempo: 96,
+        spin: 99,
+        control: 82,
+        weight: 49,
+        price: 79,
+      },
+      {
+        side: "RH",
+        name: "Butterfly Tenergy 05",
+        tempo: 95,
+        spin: 95,
+        control: 80,
+        weight: 47,
+        price: 74,
+      },
+    ],
+    metrics: {
+      tempo: 97,
+      spin: 97,
+      control: 80,
+      balance: "Leistungsorientiert",
+    },
+    totalPrice: 220 + 79 + 74,
+    description:
+      "Maximale Power für ambitionierte Turnierspieler*innen mit explosivem Offensivspiel.",
+    reviews: [
+      {
+        user: "Jia",
+        quote:
+          "Das Carbonado gibt mir enorme Stabilität bei Topspins auf Unterschnitt.",
+        rating: 4.9,
+      },
+      {
+        user: "Ben",
+        quote: "Trotz High-End Tempo überraschend gefühlvoll im Kurz-Kurz.",
+        rating: 4.7,
+      },
+    ],
+  },
+];
+
+export const materials = [
+  {
+    id: "blade-allround-classic",
+    type: "blade",
+    name: "Stiga Allround Classic",
+    brand: "Stiga",
+    tempo: 78,
+    control: 88,
+    spin: 75,
+    weight: 83,
+    price: 45,
+    composition: "5-schichtig Holz",
+    style: "allround",
+    carbon: false,
+  },
+  {
+    id: "blade-viscaria",
+    type: "blade",
+    name: "Butterfly Viscaria",
+    brand: "Butterfly",
+    tempo: 94,
+    control: 78,
+    spin: 90,
+    weight: 90,
+    price: 165,
+    composition: "ALC Carbon",
+    style: "offensive",
+    carbon: true,
+  },
+  {
+    id: "blade-acoustic",
+    type: "blade",
+    name: "Nittaku Acoustic",
+    brand: "Nittaku",
+    tempo: 86,
+    control: 84,
+    spin: 88,
+    weight: 88,
+    price: 140,
+    composition: "5-schichtig Holz",
+    style: "allround",
+    carbon: false,
+  },
+  {
+    id: "blade-carbonado145",
+    type: "blade",
+    name: "Stiga Carbonado 145",
+    brand: "Stiga",
+    tempo: 97,
+    control: 80,
+    spin: 95,
+    weight: 89,
+    price: 220,
+    composition: "Carbon",
+    style: "offensive",
+    carbon: true,
+  },
+  {
+    id: "blade-chen-weixing",
+    type: "blade",
+    name: "Joola Chen Weixing",
+    brand: "Joola",
+    tempo: 68,
+    control: 94,
+    spin: 82,
+    weight: 86,
+    price: 95,
+    composition: "Defensiv-Holz",
+    style: "defensive",
+    carbon: false,
+  },
+  {
+    id: "rubber-sriver-fx",
+    type: "rubber",
+    name: "Butterfly Sriver FX",
+    brand: "Butterfly",
+    tempo: 80,
+    control: 86,
+    spin: 82,
+    hardness: "Weich",
+    price: 32,
+    style: "allround",
+    carbon: false,
+  },
+  {
+    id: "rubber-omega7-pro",
+    type: "rubber",
+    name: "Xiom Omega VII Pro",
+    brand: "Xiom",
+    tempo: 95,
+    control: 78,
+    spin: 96,
+    hardness: "Mittel-Hart",
+    price: 55,
+    style: "offensive",
+    carbon: false,
+  },
+  {
+    id: "rubber-aurus-select",
+    type: "rubber",
+    name: "Tibhar Aurus Select",
+    brand: "Tibhar",
+    tempo: 90,
+    control: 80,
+    spin: 92,
+    hardness: "Medium",
+    price: 48,
+    style: "offensive",
+    carbon: false,
+  },
+  {
+    id: "rubber-bluestorm-z2",
+    type: "rubber",
+    name: "Donic Bluestorm Z2",
+    brand: "Donic",
+    tempo: 92,
+    control: 80,
+    spin: 94,
+    hardness: "Medium",
+    price: 52,
+    style: "offensive",
+    carbon: false,
+  },
+  {
+    id: "rubber-fastarc-g1",
+    type: "rubber",
+    name: "Nittaku Fastarc G-1",
+    brand: "Nittaku",
+    tempo: 90,
+    control: 82,
+    spin: 92,
+    hardness: "Mittel-Hart",
+    price: 49,
+    style: "offensive",
+    carbon: false,
+  },
+  {
+    id: "rubber-victas-401",
+    type: "rubber",
+    name: "Victas VS> 401",
+    brand: "Victas",
+    tempo: 78,
+    control: 88,
+    spin: 92,
+    hardness: "Hart",
+    price: 48,
+    style: "defensive",
+    carbon: false,
+  },
+  {
+    id: "rubber-grass-dtecs",
+    type: "rubber",
+    name: "Tibhar Grass D.Tecs",
+    brand: "Tibhar",
+    tempo: 60,
+    control: 90,
+    spin: 50,
+    hardness: "Lang-Noppe",
+    price: 47,
+    style: "defensive",
+    carbon: false,
+  },
+];
+
+export const trainingGoals = [
+  "Platzierung verbessern",
+  "Konstante Aufschläge",
+  "Topspin auf Unterschnitt",
+  "Schnelle Beinarbeit",
+  "Matchtaktik",
+  "Schnittvariationen",
+  "Rückhand stärken",
+  "Mentale Stärke",
+];
+
+export const trainingLibrary = [
+  {
+    id: "serve-mastery",
+    title: "Variabler Aufschlag-Fokus",
+    category: "Aufschlag",
+    level: "all",
+    intensity: "mittel",
+    duration: 25,
+    description:
+      "Übe drei Aufschlagvarianten (Seit-, Unter- und Überschnitt) mit klaren Zielzonen.",
+    goals: ["Konstante Aufschläge", "Schnittvariationen"],
+    media: {
+      type: "video",
+      title: "Serve Placement Drill",
+      url: "https://youtu.be/serve-drill",
+    },
+  },
+  {
+    id: "footwork-ladders",
+    title: "Footwork Ladder & Shadowing",
+    category: "Athletik",
+    level: "all",
+    intensity: "hoch",
+    duration: 20,
+    description:
+      "Kombiniere Koordinationsleiter mit Shadow-Topspins für explosive Antritte.",
+    goals: ["Schnelle Beinarbeit"],
+    media: {
+      type: "image",
+      title: "Leiter-Drill",
+      url: "https://example.com/ladder.jpg",
+    },
+  },
+  {
+    id: "topspin-repeat",
+    title: "Topspin auf Unterschnitt",
+    category: "Technik",
+    level: "intermediate",
+    intensity: "hoch",
+    duration: 30,
+    description:
+      "Ballmaschine oder Partner: 3er Serien Topspin auf Unterschnitt mit Fokus auf Hüfteinsatz.",
+    goals: ["Topspin auf Unterschnitt"],
+    media: {
+      type: "video",
+      title: "Loop Drill",
+      url: "https://youtu.be/topspin-loop",
+    },
+  },
+  {
+    id: "block-control",
+    title: "Block-Kontrolle RH/VH",
+    category: "Technik",
+    level: "beginner",
+    intensity: "mittel",
+    duration: 18,
+    description:
+      "Kontrollierte Blockübungen mit wechselnden Platzierungen – Fokus auf Schlägerwinkel.",
+    goals: ["Rückhand stärken", "Platzierung verbessern"],
+    media: {
+      type: "video",
+      title: "Block Control",
+      url: "https://youtu.be/block-control",
+    },
+  },
+  {
+    id: "match-play",
+    title: "Spielsimulation & Taktik",
+    category: "Matchpraxis",
+    level: "all",
+    intensity: "mittel",
+    duration: 35,
+    description:
+      "Matchähnliche Spielsituationen mit Fokus auf Zielkombination und Nachbereitung.",
+    goals: ["Matchtaktik", "Mentale Stärke"],
+    media: {
+      type: "video",
+      title: "Tactical Scenarios",
+      url: "https://youtu.be/match-play",
+    },
+  },
+  {
+    id: "core-strength",
+    title: "Core & Schulterstabilität",
+    category: "Athletik",
+    level: "all",
+    intensity: "mittel",
+    duration: 15,
+    description:
+      "Planks, Russian Twists und Theraband-Übungen für rotationsstarke Schläge.",
+    goals: ["Schnelle Beinarbeit", "Topspin auf Unterschnitt"],
+    media: {
+      type: "image",
+      title: "Core Stability",
+      url: "https://example.com/core.jpg",
+    },
+  },
+  {
+    id: "serve-return",
+    title: "Aufschlag-Rückschlag-Muster",
+    category: "Technik",
+    level: "advanced",
+    intensity: "hoch",
+    duration: 22,
+    description:
+      "Trainiere konkrete Aufschlag-Return-Kombinationen mit Fokus auf ersten aktiven Ball.",
+    goals: ["Matchtaktik", "Konstante Aufschläge"],
+    media: {
+      type: "video",
+      title: "Serve & Receive",
+      url: "https://youtu.be/serve-return",
+    },
+  },
+  {
+    id: "mental-reset",
+    title: "Mentales Reset & Fokus",
+    category: "Mentales Training",
+    level: "all",
+    intensity: "niedrig",
+    duration: 12,
+    description:
+      "Atemfokus, Visualisierung von Spielsituationen und Positiv-Routinen.",
+    goals: ["Mentale Stärke"],
+    media: {
+      type: "audio",
+      title: "Mindful Reset",
+      url: "https://example.com/mental.mp3",
+    },
+  },
+];
+
+export const proVideoLibrary = {
+  topspin: [
+    {
+      title: "Fan Zhendong – Power Topspin Analyse",
+      url: "https://youtu.be/fan-topspin",
+      focus: "Hüftrotation & Gewichtstransfer",
+    },
+    {
+      title: "Mima Ito – Tempo Topspin",
+      url: "https://youtu.be/ito-topspin",
+      focus: "kurzer Armzug bei schnellem Rhythmus",
+    },
+  ],
+  serve: [
+    {
+      title: "Ma Long – Aufschlagvarianten",
+      url: "https://youtu.be/malong-serve",
+      focus: "Variabler Handgelenkeinsatz",
+    },
+    {
+      title: "Dimitrij Ovtcharov – Banana Flip Setup",
+      url: "https://youtu.be/dima-serve",
+      focus: "Erster aktiver Rückschlag",
+    },
+  ],
+  block: [
+    {
+      title: "Kasumi Ishikawa – Blockschule",
+      url: "https://youtu.be/ishikawa-block",
+      focus: "Schlägerwinkel und Timing",
+    },
+  ],
+  footwork: [
+    {
+      title: "Hugo Calderano – Beinarbeit",
+      url: "https://youtu.be/calderano-footwork",
+      focus: "Split-Step und Side-Steps",
+    },
+  ],
+};
+
+export const analysisInsights = {
+  topspin: {
+    strengths: [
+      "Solide Vorbereitung mit leichtem Oberkörper-Vorladen",
+      "Gute Beschleunigung aus dem Unterarm"
+    ],
+    improvements: [
+      "Öffne den Schläger minimal für mehr Sicherheit bei Unterschnitt",
+      "Setze den linken Fuß etwas weiter nach vorne für bessere Balance"
+    ],
+    drills: ["topspin-repeat", "footwork-ladders", "core-strength"],
+  },
+  serve: {
+    strengths: ["Klares Wurfverhalten", "Konsequenter Handgelenkeinsatz"],
+    improvements: [
+      "Variiere den Treffpunkt, um Spinwechsel zu verstärken",
+      "Bleibe nach dem Aufschlag stabil in Grundstellung"
+    ],
+    drills: ["serve-mastery", "serve-return", "mental-reset"],
+  },
+  block: {
+    strengths: ["Früher Balltreffpunkt", "Stabile Körperachse"],
+    improvements: [
+      "Lockerere Griffhaltung für mehr Gefühl",
+      "Arbeite aktiver mit dem Unterarm für platzierte Blocks"
+    ],
+    drills: ["block-control", "footwork-ladders"],
+  },
+  footwork: {
+    strengths: ["Hohe Grundschnelligkeit", "Gute Split-Step-Routine"],
+    improvements: [
+      "Halte den Oberkörper niedriger für stabilere Mitte",
+      "Kleine Sidesteps zwischen den Schlägen einbauen"
+    ],
+    drills: ["footwork-ladders", "core-strength", "match-play"],
+  },
+};
